@@ -8,6 +8,7 @@ $tablet-width: 755px;
 
 
 
+
 /*Mixins - media queries*/
 
 @mixin mobile {
@@ -79,9 +80,9 @@ header {
 
 @include tablet {
     header {
-        width: 95% !important;
+        width: 98% !important;
         flex-direction: row !important;
         justify-content: space-between !important;
-        align-items: flex-start !important;
+        align-items: center !important;
     }
 }
