@@ -16,4 +16,13 @@ header {
             font-style: italic;
         }
     }
+    #form-container {
+        width: 340px;
+        #search-box {
+            width: 250px;
+        }
+        #submit-btn {
+            width: 60px;
+        }
+    }
 }
