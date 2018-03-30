@@ -3,6 +3,21 @@
 $mobile-width: 550px;
 $tablet-width: 755px;
 
+
+/*Mixins - media queries*/
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
