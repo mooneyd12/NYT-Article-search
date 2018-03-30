@@ -6,7 +6,14 @@ body {
 header {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    #main-header {
+        font-family: helvetica;
+        span {
+            color: lightblue;
+            font-style: italic;
+        }
+    }
 }
