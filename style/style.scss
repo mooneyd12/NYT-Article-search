@@ -11,15 +11,15 @@ header {
     align-items: flex-start;
     #main-header {
         font-family: helvetica;
+        font-size: 20px;
         span {
             color: lightblue;
             font-style: italic;
         }
     }
     #form-container {
-        width: 340px;
         #search-box {
-            width: 250px;
+            width: 300px;
         }
         #submit-btn {
             width: 60px;
