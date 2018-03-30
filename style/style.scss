@@ -5,6 +5,8 @@ body {
 
 header {
     width: 100%;
+    padding: 10px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -30,6 +32,7 @@ header {
 #nyt-container {
     width: 700px;
     padding: 10px;
+    margin-left: 20px;
     margin-right: 200px;
     .article-list {
         margin: 0;
