@@ -4,6 +4,8 @@ $mobile-width: 550px;
 $tablet-width: 755px;
 
 
+
+
 /*Mixins - media queries*/
 
 @mixin mobile {
@@ -60,5 +62,21 @@ header {
         list-style-type: none;
         padding: 10px 0;
         border-bottom: 1px solid black;
+    }
+}
+
+@include mobile {
+    #nyt-container {
+        width: 95% !important;
+        margin: 0 auto !important;
+    }
+}
+
+@include tablet {
+    header {
+        width: 95% !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
     }
 }
