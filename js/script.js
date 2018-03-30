@@ -15,7 +15,7 @@ function loadData() {
         for (var i = 0; i < articleList.length; i++) {
             var article = articleList[i];
 
-            $nytArticles.append("<li class='article'>" + "<a href='" + article.web_url + "'>" + article.headline.main + "</a>" + "<p class='article-snippet'>" + article.snippet + "</p>" + "</li>");
+            $nytArticles.append("<li class='article'>" + "<a class='article-url' href='" + article.web_url + "'>" + article.headline.main + "</a>" + "<p class='article-snippet'>" + article.snippet + "</p>" + "</li>");
         };
     });
     return false;

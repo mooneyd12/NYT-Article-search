@@ -6,6 +6,8 @@ $tablet-width: 755px;
 
 
 
+
+
 /*Mixins - media queries*/
 
 @mixin mobile {
@@ -62,6 +64,9 @@ header {
         list-style-type: none;
         padding: 10px 0;
         border-bottom: 1px solid black;
+    }
+    .article-url {
+        font-size: 18px;
     }
 }
 
