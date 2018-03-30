@@ -9,5 +9,16 @@ function loadData() {
 
     $nytHeader.text("New York Times articles about " + searchVal);
 
+    $.getJSON(nyTimesURL, function(data) {
+        var articleList = data.response.docs;
 
+        for (var i = 0; i < articleList.length; i++) {
+            var article = articleList[i];
+
+            $nytArticles.append("<li class'article'>" + "<a href='" + article.web_url + "'>" + article.headline.main + "</a>" + "<p class='article-snippet'>" + article.snippet + "</p>" + "</li>");
+        };
+    });
+    return false;
 };
+
+$('#form-container').submit(loadData);
