@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -66,9 +66,6 @@ header {
 }
 
 @include tablet {
-    header {
-        width: calc(100% - 20px) !important;
-    }
     #nyt-container {
         width: calc(100% - 20px) !important;
         margin: 0 auto !important;
@@ -77,7 +74,6 @@ header {
 
 @include tablet-plus {
     header {
-        width: calc(98% - 20px) !important;
         flex-direction: row !important;
         justify-content: space-between !important;
         align-items: center !important;
