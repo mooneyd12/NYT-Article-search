@@ -26,11 +26,13 @@ header {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
     #main-header {
         font-family: helvetica;
         font-size: 20px;
+        color: white;
         span {
             color: lightblue;
             font-style: italic;
@@ -73,6 +75,9 @@ header {
     #nyt-container {
         width: calc(100% - 20px) !important;
         margin: 0 auto !important;
+    }
+    #nyt-header {
+    	text-align: center !important;
     }
 }
 
