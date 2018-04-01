@@ -33,7 +33,6 @@ header {
     	padding-left: 10px;
         font-family: helvetica;
         font-size: 20px;
-        font-weight: 300;
         color: white;
         span {
             color: lightblue;
@@ -56,7 +55,8 @@ header {
     padding: 10px;
     margin-right: 200px;
     #nyt-header {
-        font-family: sans-serif;
+        font-family: sans-serif;        
+        font-weight: 300;
         padding: 1px 10px;
     }
     .article-list {
