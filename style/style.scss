@@ -2,6 +2,7 @@
 
 $tablet-width: 750px;
 
+
 /*Mixins - media queries*/
 
 @mixin tablet {
@@ -51,6 +52,10 @@ header {
     width: 700px;
     padding: 10px;
     margin-right: 200px;
+    #nyt-header {
+        font-family: sans-serif;
+        padding: 1px 15px;
+    }
     .article-list {
         margin: 0;
         padding: 0;
