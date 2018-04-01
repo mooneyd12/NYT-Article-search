@@ -57,6 +57,11 @@ header {
         }
         #submit-btn {
             width: 60px;
+            border: none;
+            background-color: #a2d1fb;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            cursor:pointer; 
         }
     }
 }
