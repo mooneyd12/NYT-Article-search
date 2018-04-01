@@ -1,8 +1,14 @@
 /*Variables*/
-
+$mobile-width: 320px;
+$mobile-med-width :410px;
 $tablet-width: 750px;
 
 /*Mixins - media queries*/
+@mixin mobile {
+	@media (min-width: #{$mobile-width}) and (max-width: #{$mobile-med-width}) {
+		@content;
+	}
+}
 
 @mixin tablet {
     @media (max-width: #{$tablet-width - 1px}) {
@@ -40,6 +46,10 @@ header {
         }
     }
     #form-container {
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: flex-start;
+		align-items: center;
         #search-box {
             width: 300px;
             padding-left: 10px;
@@ -71,6 +81,15 @@ header {
     .article-url {
         font-size: 18px;
     }
+}
+
+@include mobile {
+	#main-header {
+		text-align: center;
+	}
+	#form-container {
+		width: 280px !important;
+	}
 }
 
 @include tablet {
