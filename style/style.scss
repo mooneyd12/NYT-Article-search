@@ -1,5 +1,5 @@
 /*Variables*/
-$mobile-width: 320px;
+$mobile-width: 300px;
 $mobile-med-width :410px;
 $tablet-width: 750px;
 
@@ -46,10 +46,11 @@ header {
         }
     }
     #form-container {
+    	height: 35px;
     	display: flex;
     	flex-direction: row;
     	justify-content: flex-start;
-		align-items: center;
+		align-items: stretch;
         #search-box {
             width: 300px;
             padding-left: 10px;
@@ -64,6 +65,7 @@ header {
     width: 700px;
     padding: 10px;
     margin-right: 200px;
+    border-right: 1px solid #eceaea;
     #nyt-header {
         font-family: sans-serif;        
         font-weight: 300;
@@ -94,7 +96,7 @@ header {
 
 @include tablet {
     #nyt-container {
-        width: calc(100% - 20px) !important;
+        width: calc(100% - 21px) !important;
         margin: 0 auto !important;
     }
     #nyt-header {
